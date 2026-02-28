@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "p";
+    src: url("assets/Hey Comic.ttf") format("truetype");
+}
+
+/* RESET */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px; /* pindahkan margin ke body saja */
+    background-image: url("assets/bg.svg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    font-family: "p";
+}
+
+/* PARAGRAPH */
+p{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 430px;
+    margin-left: 430px;
+}
+
+/* Biar di HP tidak rusak */
+@media (max-width: 1024px){
+    p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 600px){
+    p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+#hr{
+    margin-top: -30px;
+}
+
+/* JUDUL CENTER */
+h2,
+.doa-title,
+.doa-judul {
+    text-align: center;
+}
+
+/* JUDUL IMAGE */
+.smw-judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.smw-judul img{
+    width: 140vh;    
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* TAMBAHAN INFO */
+.tambahan-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.tambahan-info img{
+    width: 95vh;      
+    max-width: 100%;  
+    height: auto;
+    display: block;
+}
