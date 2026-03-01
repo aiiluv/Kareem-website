@@ -3,10 +3,6 @@
     src: url("assets/Hey Comic.ttf") format("truetype");
 }
 
-*{
-    box-sizing: border-box;
-}
-
 body {
     margin: 20px;
     background-image: url("assets/bg.svg");
@@ -16,25 +12,45 @@ body {
     font-family: "p";
 }
 
+/* NAVBAR */
+
+#grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 30%;
+    justify-items: center; }
+
+#Navbar_dan_logo{
+    background-color: #F7C93E;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;}
+
+.inline ul > li{
+    display: inline;
+    align-items: center;}
+
+.inline ul > li > a{color: #484848; margin: 10px;}
+
+ul > li > a,
+.contact-color {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nav{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;}
+
+/* UMUM? GABUNGIN AJA AH */
 p{
     font-size: 20px;
     text-align: center;
-    margin-right: 430px;
-    margin-left: 430px;
-}
-
-@media (max-width: 1024px){
-    p{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
-
-@media (max-width: 600px){
-    p{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 }
 
 #hr{
@@ -47,11 +63,12 @@ h2,
     text-align: center;
 }
 
+/* INI BUAT JUDUL */
 .smw-judul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: -20px;
 }
 
@@ -62,18 +79,170 @@ h2,
     display: block;
 }
 
+/* TAMBAHAN INFO */
+
 .tambahan-info{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 15px;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
-
 .tambahan-info img{
-    width: 95vh;      
+    width: 60vh;      
     max-width: 100%;  
     height: auto;
     display: block;
+}
+
+/* SIDEBAR ANIMASI */
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #666;
+}
+
+.sidebar a:hover {
+    color: #f4b400;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* DOA - DOA */
+
+#KOLEKSI-DOA{
+    margin: 194px 10vh 0 10vh;
+}
+
+#KOLEKSI-DOA img{
+     width: 60vh;      
+    max-width: 100%;  
+    height: auto;
+    display: block;
+}
+
+.line {
+    height: 30px;
+    background: #F7C93E;
+    border-radius: 10px;
+    margin: 15px 10vh 0 0;
+}
+.content {
+    display: flex;
+    align-self: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 40px 80px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.sidebar {
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    padding: 20px;
+    margin: 5vh;;
+    border-radius: 15px;
+    border: 2px solid #f4b400;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.sidebar ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    margin: 5vh;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+.doa-satuan {
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #f4b400;
+    margin-bottom: 25px;
+
+    padding: 25px 30px;
+    max-width: 800px;
+}
+
+.doa-satuan h2 {
+    color: #9D4F38;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E2A93B;
+    padding-bottom: 8px;
+}
+
+.doa-satuan p {
+    color: #2B120B;
+    font-size: 18px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px){
+    p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar {
+        position: relative;   /* matikan sticky di mobile */
+        top: 0;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .main {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
 }
