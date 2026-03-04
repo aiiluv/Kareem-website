@@ -1,0 +1,372 @@
+@font-face {
+    font-family: "p";
+    src: url("assets/Hey Comic.ttf") format("truetype");
+}
+
+body {
+    background-image: url("assets/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "p";
+}
+
+/* NAVBAR */
+
+#grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 30%;
+    justify-items: center;
+}
+
+#Navbar_dan_logo {
+    background-color: #F7C93E;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.inline ul > li {
+    display: inline;
+    align-items: center;
+}
+
+.inline ul > li > a {
+    color: #484848;
+    margin: 10px;
+}
+
+ul > li > a,
+.contact-color {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nav {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* UMUM */
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#hr {
+    margin-top: -30px;
+}
+
+h2,
+.doa-title,
+.doa-judul {
+    text-align: center;
+}
+
+/* JUDUL */
+
+.smw-judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+.smw-judul img {
+    width: 140vh;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TAMBAHAN INFO */
+.tambahan-info{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.tambahan-info img{
+    width: 60vh;      
+    max-width: 100%;  
+    height: auto;
+    display: block;
+}
+
+
+/* SECTION LAYOUT */
+
+.dzikir-counting-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+/* COUNTER AREA */
+
+.counter-area {
+    position: relative;
+    width: 350px;
+}
+
+.counter-area .bg {
+    width: 100%;
+}
+
+/* tombol reset */
+
+#reset {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+/* tombol plus */
+
+#plus {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
+/* angka counter */
+
+#bisa-plis {
+    width: 225.15px;
+    height: 124.28px;
+}
+
+#bisa-plis {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    background: none;
+    text-align: center;
+    font-size: 70px;
+    transform: translate(-110px, -385px);
+    font-family: "p";
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn img {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover img {
+    transform: scale(1.1);
+}
+
+.btn:active img {
+    transform: scale(0.95);
+}
+
+.counter-area{
+    position: relative;
+}
+
+.notif{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 900%);
+    display: none;
+    background: #2E8B57;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+#target-plis{
+    background: #1E6F5C;
+    font:#fff;
+    font-size: 30px;
+    margin: 2px;
+    justify-content: end;
+    margin: 200px;
+    margin: 200px;
+}
+
+
+/* BOX DZIKIR */
+
+.dzikir-box {
+    background: #fff8ea;
+    border: 3px solid #f4b400;
+    border-radius: 20px;
+    padding: 30px;
+    width: 700px;
+    height: fit-content;
+}
+
+/* HEADER DZIKIR */
+
+#JUDUL {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.JUDUL-ZIKIR img{
+     width: 60vh;      
+    max-width: 100%;  
+    height: auto;
+    display: block;
+}
+
+
+/* WRAPPER CARD */
+
+.wrapper {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 10px;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 320px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #f4b400;
+    background: #fff;
+    text-align: center;
+    height: fit-content;
+}
+
+.item h2 {
+    color: #9D4F38;
+    font-size: 18px;
+    border-bottom: 2px solid #E2A93B;
+    padding-bottom: 8px;
+}
+
+/* SECTION FULL LEBAR */
+.dzikir-counting-section{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.dzikir-box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+/* STYLE KHUSUS ARAB */
+.arab{
+    direction: rtl;
+    text-align: right;
+    font-size: 28px;
+    color: #1E6F5C;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* paragraf arti */
+.item p{
+    color: #5A3E36;
+    font-size: 18px;
+}
+
+/* BATAS */
+
+.batas {
+    height: 10vh;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    justify-content: center;
+    margin: 10vh;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px){
+
+    .dzikir-box{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .item{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    body{
+        padding: 10px;
+    }
+
+    .dzikir-counting-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .dzikir-box{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .wrapper{
+        gap: 15px;
+    }
+
+    .item{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #bisa-plis{
+        font-size: 50px;
+    }
+
+    
+    #instruksi{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
