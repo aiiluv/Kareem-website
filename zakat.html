@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman hitung zakat</title>
+    <link rel="stylesheet" href="style-zakat.css">
+
+</head>
+<body>
+    <!-- NAVIGASI -->
+    <main id="Navbar_dan_logo">
+        <div id="grid-item">
+            <img id="logo" src="assets/logo kareem.svg" alt="">
+        </div>
+        <div class="nav">
+            <nav class="inline" id="navbar-nih">
+                <ul class="nav">
+                <li><a href="">Beranda</a></li>
+                <li><a href="doa.html">Doa</a></li>
+                <li><a href="dzikir.html">Dzikir</a></li>
+                <li><a href="">Waktu sholat</a></li>
+                <li><a href="zakat.html">Hitung zakat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- MAIN CONTENT -->
+     <main>
+        <!-- JUDUL ZAKAT -->
+     <div>
+        <header>
+        <div class="smw-judul">
+            <img src="assets/title - zakat.svg" alt="">
+        </div>
+    </header>
+
+    <!-- TAMBAHAN INFO -->
+        <div class="tambahan-info">
+            <img src="assets/7.svg" alt="">
+            <img src="assets/8.svg" alt="">
+            <img src="assets/9.svg" alt="">
+        </div>
+
+    <main>
+
+    <!-- BATAS -->
+     <div class="batas"></div>
+     <div class="batas"></div>
+     <div class="batas"></div>
+
+    <!-- ZAKAT -->
+    <section class="zakat-box">
+        <label>Jenis Zakat</label>
+        <select id="jenisZakat">
+            <option value="">-- Pilih Zakat --</option>
+            <option value="penghasilan">Zakat Penghasilan</option>
+            <option value="emas">Zakat Emas</option>
+            <option value="fitrah">Zakat Fitrah</option>
+        </select>
+
+        <!-- PENGHASILAN -->
+        <div id="formPenghasilan" class="form-dynamic">
+            <label>Gaji</label>
+            <input type="number" id="gaji">
+            <label>Penghasilan Lain</label>
+            <input type="number" id="lainnya">
+        </div>
+
+        <!-- EMAS -->
+        <div id="formEmas" class="form-dynamic">
+            <label>Total Emas (gram)</label>
+            <input type="number" id="emas">
+        </div>
+
+        <div id="hargaEmasBox">
+            <label>Harga Emas per Gram</label>
+            <input type="number" id="hargaEmas">
+        </div>
+
+        <!-- FITRAH -->
+         <div id="formFitrah" class="form-dynamic">
+            <label>Jumlah Orang Wajib Zakat</label>
+            <input type="number" id="orang">
+        </div>
+
+        <button onclick="hitungZakat()">Hitung Zakat</button>
+    </section>
+
+    <!-- BATAS -->
+    <div class="batas"></div>
+    <div class="batas"></div>
+
+    <!-- HASIL -->
+    <section class="zakat-box" id="hasil">
+        <h2>Hasil Perhitungan</h2>
+        <p>Total Harta: <span id="total"></span></p>
+        <p>Nisab: <span id="nisab"></span></p>
+        <p>Status: <span id="status"></span></p>
+        <p>Zakat: <span id="zakat"></span></p>
+
+</section>
+<script src="script-zakat.js"></script>
+
+</main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 ALHAZEN RAMADHAN CHALLENGE</p>
+    </footer>
+
+</body>
+</html>
