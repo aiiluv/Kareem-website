@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman tracker</title>
+    <link rel="stylesheet" href="style-tracker.css">
+</head>
+<body>
+    <!-- NAVIGASI -->
+    <main id="Navbar_dan_logo">
+        <div id="grid-item">
+            <img id="logo" src="assets/logo kareem.svg" alt="">
+        </div>
+        <div class="nav">
+            <nav class="inline" id="navbar-nih">
+                <ul class="nav">
+                <li><a href="">Beranda</a></li>
+                <li><a href="doa.html">Doa</a></li>
+                <li><a href="dzikir.html">Dzikir</a></li>
+                <li><a href="">Waktu sholat</a></li>
+                <li><a href="zakat.html">Hitung zakat</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- MAIN CONTENT -->
+     <main>
+        <!-- JUDUL TRACKER -->
+     <div>
+        <header>
+        <div class="smw-judul">
+            <img src="assets/title - tracker.svg" alt="">
+        </div>
+    </header>
+
+    <!-- BATAS -->
+     <div class="batas"></div>
+     <div class="batas"></div>
+     <div class="batas"></div>
+
+    <!-- TRACKER -->
+     <p>Pantau Ibadah Harianmu</p>
+    </header>
+
+
+    <div class="container">
+        <!-- SHALAT & ZIKIR-->
+        <div class="card">
+            <h2>Progress Harian</h2>
+            <div class="progress-bar">
+                <div class="progress" id="dailyProgress"></div>
+            </div>
+            <p id="motivasi">Bersemangat dalam ketaatan!</p>
+
+            <h2>Shalat Wajib</h2>
+            <label><input type="checkbox" class="shalat"> Subuh</label><br>
+            <label><input type="checkbox" class="shalat"> Dzuhur</label><br>
+            <label><input type="checkbox" class="shalat"> Ashar</label><br>
+            <label><input type="checkbox" class="shalat"> Maghrib</label><br>
+            <label><input type="checkbox" class="shalat"> Isya</label><br><br>
+
+            <h2>Dzikir</h2>
+            <label><input type="checkbox" class="zikir">Dzikir pagi</label><br>
+            <label><input type="checkbox" class="zikir">Dzikir petang</label><br>
+            <div class="batas"></div>
+
+            <button onclick="hitungShalat()">Simpan</button>
+        </div>
+
+        <!-- BATAS -->
+        <div class="batas"></div>
+
+        <!-- QURAN -->
+        <div class="card">
+            <h2>Baca Qur'an</h2>
+            <label>Target Halaman</label><br>
+            <input type="number" id="targetQuran"><br><br>
+            <label>Halaman Dibaca</label><br>
+            <input type="number" id="readQuran"><br><br>
+            <div class="progress-bar">
+                <div class="progress" id="quranProgress"></div>
+            </div>
+            <p id="quranStatus"></p>
+            <br>
+            <button onclick="hitungQuran()">Simpan</button>
+        </div>
+
+        <!-- BATAS -->
+        <div class="batas"></div>
+
+        <!-- PUASA -->
+        <div class="card">
+            <h2>Puasa Ramadhan</h2>
+            <p>Klik hari yang sudah puasa</p>
+            <div class="calendar" id="calendar"></div>
+            <br>
+            <button onclick="hitungPuasa()">Simpan</button>
+        </div>
+    </div>
+    <script src="script-tracker.js"></script>
+    <main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 ALHAZEN RAMADHAN CHALLENGE</p>
+    </footer>
+</body>
+</html>

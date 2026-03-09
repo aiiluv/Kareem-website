@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "p";
+    src: url("assets/Hey Comic.ttf") format("truetype");
+}
+
+body {
+    margin: 20px;
+    background-image: url("assets/bg.svg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    font-family: "p";
+}
+
+/* NAVBAR */
+
+#grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 30%;
+    justify-items: center; }
+
+#Navbar_dan_logo{
+    background-color: #F7C93E;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;}
+
+.inline ul > li{
+    display: inline;
+    align-items: center;}
+
+.inline ul > li > a{color: #484848; margin: 10px;}
+
+ul > li > a,
+.contact-color {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nav{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;}
+
+/* UMUM? GABUNGIN AJA AH */
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#hr{
+    margin-top: -30px;
+}
+
+h2,
+.doa-title,
+.doa-judul {
+    text-align: center;
+}
+
+/* INI BUAT JUDUL */
+.smw-judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+.smw-judul img{
+    width: 140vh;    
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* TAMBAHAN INFO */
+
+.tambahan-info{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.tambahan-info img{
+    width: 60vh;      
+    max-width: 100%;  
+    height: auto;
+    display: block;
+}
+
+/* TRACKER */
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+section{
+max-width:600px;
+margin:auto;
+}
+
+.card{
+    background: #fff8ea;
+    border: 3px solid #f4b400;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    height: fit-content;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.progress-bar{
+width:100%;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress{
+height:20px;
+background:#198754;
+width:0%;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:#198754;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#146c43;
+}
+
+.calendar{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:10px;
+}
+
+.day{
+background:#eee;
+padding:15px;
+text-align:center;
+border-radius:5px;
+cursor:pointer;
+}
+
+.checked{
+background:#198754;
+color:white;
+}
+
+/* BATAS */
+.batas {
+    height: 2vh;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    justify-content: center;
+    margin: 10vh;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px){
+    p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .main {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    header h1{
+font-size:22px;
+}
+
+main{
+padding:15px;
+}
+
+}
