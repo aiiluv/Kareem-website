@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "p";
+    src: url("assets/Hey Comic.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-image: url("assets/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "p";}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+#grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 30%;
+    justify-items: center;
+}
+
+#Navbar_dan_logo {
+    background-color: #F7C93E;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.inline ul > li {
+    display: inline;
+    align-items: center;
+}
+
+.inline ul > li > a {
+    color: #484848;
+    margin: 10px;
+}
+
+ul > li > a,
+.contact-color {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nav {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* UMUM */
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#hr {
+    margin-top: -30px;
+}
+
+h2,
+.doa-title,
+.doa-judul {
+    text-align: center;
+}
+
+/* JUDUL */
+.smw-judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+.smw-judul img {
+    width: 140vh;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* HERO */
+
+.hero img{
+    width:100%;
+    margin-top:20px;
+}
+
+/* FITUR */
+
+.fitur{
+    margin-top:60px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.fitur-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-decoration:none;
+    color:black;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.25s;
+}
+
+.fitur-card:hover{
+    transform:translateY(-6px);
+}
+
+.fitur-card h3{
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.nav-wrapper{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-menu{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.logo{
+    width:100px;
+}
+
+}
